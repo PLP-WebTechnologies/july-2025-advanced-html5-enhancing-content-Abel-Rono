@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced Web Page with HTML5 Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    header, nav, main, footer {
+      padding: 20px;
+      margin: auto;
+      max-width: 960px;
+      background: #fff;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    fieldset {
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      padding: 15px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      background: #333;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      width: auto;
+    }
+
+    input[type="submit"]:hover {
+      background: #555;
+    }
+
+    img, video {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Smart Solutions</h1>
+    <p>Explore our features and get in touch through the form below.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Our Core Services</h2>
+      <ul>
+        <li>AI Automation</li>
+        <li>Digital Marketing</li>
+        <li>Web Development</li>
+        <li>Business Intelligence</li>
+      </ul>
+
+      <h3>Steps We Follow</h3>
+      <ol>
+        <li>Requirement Gathering</li>
+        <li>System Design</li>
+        <li>Development</li>
+        <li>Testing & Deployment</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Team Skill Matrix</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Team Member</th>
+            <th>Skill</th>
+            <th>Experience (Years)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jane Doe</td>
+            <td>Python, AI</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>John Smith</td>
+            <td>Web Dev, UI/UX</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Ali Khan</td>
+            <td>Data Analysis</td>
+            <td>4</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Media Showcase</h2>
+      <p>Here's a quick look at our latest campaign:</p>
+      <img src="https://via.placeholder.com/800x300" alt="Campaign Preview">
+
+      <p>Watch this short video overview of our solutions:</p>
+      <video controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="John Doe">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 0712345678" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Project Details</legend>
+
+          <label for="project-type">Project Type:</label>
+          <select id="project-type" name="project-type" required>
+            <option value="">--Please choose an option--</option>
+            <option value="ai">AI Automation</option>
+            <option value="web">Web Development</option>
+            <option value="marketing">Marketing</option>
+          </select>
+
+          <label for="description">Project Description:</label>
+          <textarea id="description" name="description" rows="5" minlength="20" required></textarea>
+
+          <label for="start-date">Preferred Start Date:</label>
+          <input type="date" id="start-date" name="start-date" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Preferences</legend>
+
+          <label>
+            <input type="checkbox" name="subscribe" checked>
+            Subscribe to newsletter
+          </label>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required pattern="[a-zA-Z0-9]{5,}" placeholder="At least 5 characters">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="Min 6 characters">
+
+          <label for="readonly-field">Referral Code (readonly):</label>
+          <input type="text" id="readonly-field" name="referral" value="WELCOME2025" readonly>
+        </fieldset>
+
+        <input type="submit" value="Submit Form">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Smart Solutions. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
